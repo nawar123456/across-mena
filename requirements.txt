@@ -1,3 +1,4 @@
+--only-binary=Pillow
 ﻿asgiref==3.7.2
 certifi==2023.7.22
 cffi==1.15.1
@@ -38,4 +39,5 @@ tablib==3.8.0
 tzdata==2023.3
 urllib3==2.0.4
 whitenoise==6.5.0
+
 
