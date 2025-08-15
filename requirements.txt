@@ -1,7 +1,8 @@
 # أضف هذا السطر أولاً
 --only-binary=Pillow
 
-# ثم باقي الحزم﻿asgiref==3.7.2
+# ثم باقي الحزم﻿
+asgiref==3.7.2
 certifi==2023.7.22
 cffi==1.15.1
 charset-normalizer==3.2.0
@@ -41,6 +42,7 @@ tablib==3.8.0
 tzdata==2023.3
 urllib3==2.0.4
 whitenoise==6.5.0
+
 
 
 
