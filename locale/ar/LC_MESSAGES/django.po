@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Dear Customer"
+msgstr "عزيزي العميل"
+
+
+msgid "We will answer your question as soon as possible. Thank you for your inquiry about our available designs."
+msgstr "سوف يجيب على سؤالك في أسرع وقت ممكن. نشكرك على استفسارك حول التصاميم المتوفرة لدينا"
+
+msgid "Item Type"
+msgstr "نوع البضاعة"
+
+
+msgid "Description"
+msgstr "الوصف"
+
+
+msgid "Date"
+msgstr "التاريخ"
+
+
+msgid "Weight"
+msgstr "الوزن"
+
+
+msgid "We look forward to working with you and providing our excellent service. If you have any additional questions or inquiries, please don't hesitate to ask. We're here to help."
+msgstr " نحن نتطلع إلى العمل معك وتقديم خدماتنا المميزة . إذا كانت لديك أي أسئلة إضافية أو استفسارات فلا تترد في طرحها , نحن هنا لمساعدتك"
+
+
+msgid "We will respond to your request as soon as possible. Thank you for your inquiry about pricing and the opportunity to serve us."
+msgstr "سنقوم بالرد على طلبك في أسرع وقت ممكن. نشكرك على استفسارك حول الأسعار وفرصة خدمتنا"

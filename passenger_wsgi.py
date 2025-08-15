@@ -1,0 +1,1 @@
+from costume_clearance.wsgi import application

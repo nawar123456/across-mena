@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <h2>Booking Request</h2>
+    <p><strong>Direction:</strong> {{ direction }}</p>
+    <p><strong>Shipping Service:</strong> {{ shipping_service }}</p>
+    <p><strong>Port Of Loading:</strong> {{ port_of_origin }}</p>
+    <p><strong>Port Of Discharge:</strong> {{ port_of_destination }}</p>
+    <p><strong>Departure Date:</strong> {{ date }}</p>
+    <p><strong>Arrival Date:</strong> {{ end_date }}</p>
+    <p><strong>Transit Time:</strong> {{ number_of_day }}</p>
+    <p><strong>Commodity:</strong> {{commodity.id}} | {{ commodity.label_en }}</p>
+    <p><strong>Containers Details:</strong> {{ containers_details }}</p>
+    <p><strong>Commidity Weight:</strong> {{ weight }} KG</p>
+    <p><strong>Haulage Reference:</strong> {{ reference_number }}</p>
+    <h3>Contact Information:</h3>
+    <p><strong>Full Name:</strong> {{ full_name }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Phone:</strong> {{ phone_number }}</p>
+    <p><strong>Contact Method:</strong> {{ contact_method }}</p>
+</body>
+</html>

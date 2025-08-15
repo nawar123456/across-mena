@@ -1,0 +1,365 @@
+{% load i18n %}
+
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="keywords" content="" /> 
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title> HTML CSS Template Haya</title>
+<style>
+ 
+#table tr{
+    height:180px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .dashed-line {
+        width: 100px;
+    }
+    #container {
+        max-width: 100% !important;
+    }
+    #ITeamsLogo{
+        width: 80%!important;
+    }
+    #td{
+        padding: 42px 20px 11px 0px !important;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .dashed-line {
+        width: 50px !important;
+    }
+    #container {
+        max-width: 150% !important;
+    }
+    #image{
+
+        height:122px !important;
+        margin-top:40px !important;
+    }
+    #div1{
+        height:122px !important;
+    }
+   
+    #ITeamsLogo{
+        width: 80% !important;
+    }
+   
+}
+
+</style>
+    </head>
+
+    <body>
+
+    
+    <section class="template">
+       
+                
+        <!--[if mso]>
+   <table width="70%" cellpadding="0" cellspacing="0" border="0" align="center" style="width:70%;">
+      <tr>
+         <td>
+<![endif]-->
+<div id="container" style="margin: 0 auto; max-width: 100%;">
+    <table class="template-table" style="border-spacing: 0; border-collapse: separate; width: 100%;">
+        <thead>
+     <tr style="width: 100%;">
+    <td style="width:80%; text-align: left; font-size: 14px; padding: 20px; color: #1D2444;">
+        <div class="row">
+            <div class="col-md-2" style="display: flex; justify-content: left;">
+                <!--[if mso]>
+                <img width="200" height="50" src="https://across-mena.com/menaacrosslogolandscape.png" alt="ITEAMS" style="height:700; width: 700px; bgcolor="#000000"">
+                <div style="display:none">
+                <![endif]-->
+                <img id="ITeamsLogo" src="https://across-mena.com/menaacrosslogolandscape.png" alt="ITEAMS" style="width: 39%; border: 0;">
+                <!--[if mso]>
+                </div>
+                <![endif]-->
+            </div>
+        </div>
+    </td>
+    <td style="width:20%;text-align: right; font-size: 14px;padding-top: 61px; color: #1D2444;" nowrap>
+        <!-- <span style="font-size: 14px; color: #fcc400; font-weight: bold;"> {% trans "Dear Customer" %}</span>   -->
+        <!-- <span>{% trans "Dear Customer" %}</span>   -->
+
+    </td>
+</tr>
+            
+       
+        <tr>
+            <td colspan="5" style=" text-align: auto; font-size: 14px; padding:10px 3px 18px 3px;color: #1D2444;">
+
+            <div class="row">
+               <div style="line-height: 1.5; margin: 0; padding: 0;direction: rtl;">
+                <p style="margin: 0;font-size: 14px; padding: 0;color: #1D2444;">{% trans  "Dear Customer" %}</p>
+                <p style="margin: 0;font-size: 14px; padding: 0;color: #1D2444;">{% trans "We will respond to your request as soon as possible. Thank you for your inquiry about pricing and the opportunity to serve us." %}
+                     </p>
+              </div>
+            </div>
+            </td>
+        </tr>
+        
+           <!--  <tr style="text-align: center;">
+                <td colspan="5" style=" text-align: center; font-size: 14px; padding: 0px 20px 0px 0px; color: #1D2444;">
+                    <table style="margin: 0 auto;">
+                        <tr>
+                            <td style="margin: 0 10px;"> <span>{{ discharge_address }}</span></td>
+                            {% if movement_type == 'من البابإلى الميناء' %}
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/anchor.png" alt="image 1" style="max-width: 20px; height: 25px;"></td>
+                                <td style="margin: 0 10px;"><hr class="dashed-line" style="border: none;border-top: 1px dashed #000; width: 100px; height: 0;">
+</td>
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/location.png" alt="image 2" style="max-width: 20px; height: 25px;"></td>
+                            {% elif movement_type == 'من الميناءإلى الباب' %}
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/location.png" alt="image 1" style="max-width: 20px; height: 25px;"></td>
+                                <td style="margin: 0 10px;"><hr class="dashed-line" style="border: none;border-top: 1px dashed #000; width: 100px; height: 0;">
+</td>
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/anchor.png" alt="image 2" style="max-width: 20px; height: 25px;"></td>
+                            {% elif movement_type == 'من الميناءإلى الميناء' %}
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/anchor.png" alt="image 1" style="max-width: 20px; height: 25px;"></td>
+                                <td style="margin: 0 10px;"><hr class="dashed-line" style="border: none;border-top: 1px dashed #000; width: 100px; height: 0;">
+</td>
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/anchor.png" alt="image 2" style="max-width: 20px; height: 25px;"></td>
+                            {% elif movement_type == 'من البابإلى الباب' %}
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/location.png" alt="image 1" style="max-width: 20px; height: 25px;"></td>
+                                <td style="margin: 0 10px;"><hr class="dashed-line" style="border: none;border-top: 1px dashed #000; width: 100px; height: 0;">
+</td>
+                                <td style="margin: 0 10px;"><img src="https://across-mena.com/location.png" alt="image 2" style="max-width: 20px; height: 25px;"></td>
+                           
+                           
+                            {% endif %}
+                            <td style="margin: 0 10px;"> <span>{{ loading_address }}</span> </td>
+                    
+                        </tr>
+                    </table>
+                </td>
+            </tr> -->
+            {% if movement_type == 'من الباب إلى الميناء' %}
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"> <img src="https://across-mena.com/location.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"><span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444;">  عنوان التحميل :  </span> <span style="color: #1D2444">{{ loading_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><img src="https://across-mena.com/anchor.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"> <span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444">  ميناء التفريغ :</span> <span style="color: #1D2444;">{{ discharge_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            {% elif movement_type == 'من الميناء إلى الباب' %}
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;">  <img src="https://across-mena.com/anchor.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"><span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444;">   ميناء التحميل  :</span><span style="color: #1D2444;">{{ loading_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><img src="https://across-mena.com/location.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"><span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444;">  عنوان التفريغ :</span><span style="color: #1D2444;">{{ discharge_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            {% elif movement_type == 'من الميناء إلى الميناء' %}
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><img src="https://across-mena.com/anchor.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"><span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444;">   ميناء التحميل : </span> <span style="color: #1D2444;">{{ loading_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><img src="https://across-mena.com/anchor.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"><span class="header-data" style="font-weight: bold;color: #1D2444;">  ميناء التفريغ :</span> <span style="color: #1D2444;">{{ discharge_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+               {% elif movement_type == 'من الباب إلى الباب' %}
+              <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><img src="https://across-mena.com/location.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;"><span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444;">   عنوان التحميل : </span> <span style="color: #1D2444;">{{ loading_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><img src="https://across-mena.com/location.png" alt="image 1" style="max-width: 20px; height: 25px;vertical-align: middle;">  <span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444;"> عنوان التفريغ : </span> <span style="color: #1D2444;">{{ discharge_address }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            {% endif %}
+           
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 23px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"> <span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444">  {% trans "Item Type" %}  :</span> <span style="color: #1D2444;">{{ goods_type }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 23px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"> <span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444"> {% trans "Description" %}  : </span><span style="color: #1D2444;">{{ goods_description }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                        
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 23px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"><span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444">{% trans "Weight" %}   : </span> <span style="color: #1D2444;">{{ goods_weight }} {{ goods_unit }}</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 23px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"> <span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444">  نوع الحاوية:</span>
+                                {% if containers_data %}
+                                {% for container_data in containers_data %}
+                                <span class="header-details" style="font-weight: normal;">{{ container_data.container_type }}</span><span>*</span><span>{{ container_data.container_number }}</span>
+                                {% endfor %}
+                                {% endif %}
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+                          
+            <tr >
+                <td colspan="5" style=" text-align: right; font-size: 14px; padding: 0px 23px 18px 3px; color: #1D2444;">
+                    <table style="float: right; width: auto;">
+                        <tr>
+                            <td style="margin: 0 10px;direction: rtl;"> <span class="header-data" style="vertical-align: middle;font-weight: bold;color: #1D2444"> {% trans "Date" %}  :</span><span style="color: #1D2444;">{{ shipment_date }}</span></td>
+                       
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+   
+            
+                        
+<tr>
+    <td colspan="5" style="text-align: auto; font-size: 17px; padding: 0px 3px 18px 3px; color: #1D2444;;">
+
+    <div class="row">
+        <div class="col-md-12" style="direction: rtl; font-size: 14px;line-height: 1.5;">
+            <p style=" font-size: 14px;color: #1D2444;padding: 0px;margin: 0px;">  نحن نتطلع إلى العمل معك وتقديم خدماتنا المميزة . إذا كانت لديك أي أسئلة إضافية أو استفسارات  فلا تترد في طرحها , نحن هنا لمساعدتك </p>
+            <p style=" direction: ltr;font-size: 14px;color: #1D2444;padding: 0px;margin: 0px;"> مع جزيل الشكر</p>
+            <p style=" direction: ltr;font-size: 14px;color: #1D2444;padding: 0px;margin: 0px;">فريق دعم العملاء</p>
+                  
+        </div>
+    </div>
+    </td>
+</tr>
+<tr>
+    <td colspan="6" style=" text-align: right; font-size: 14px; padding: 0px 3px 18px 3px; color: #1D2444;">
+
+   <!--[if mso]>
+    <table  width="100%" style="width: 90%;">
+        <tr>
+            <td>
+                <img src="https://across-mena.com/sea.jpg" alt="ITEAMS" width="100%"style="width: 100%; height: auto; border: 0; margin: 0 auto;">
+            </td>
+            <td >
+                <div>
+                    <a href="https://www.facebook.com/acrossmena?locale=ar_AR" style="text-decoration: none;">
+                        <img src="https://across-mena.com/facebook.png" alt="Facebook" style="width: 32px; height: auto; margin-right: 10px;">
+                    </a>
+                    <a href="https://wa.me/+963944506000" style="text-decoration: none;">
+                        <img src="https://across-mena.com/whatsapp.png" alt="WhatsApp" style="width: 32px; height: auto; margin-right: 10px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/across-mena/about/" style="text-decoration: none;">
+                        <img src="https://across-mena.com/linkedin.png" alt="LinkedIn" style="width: 32px; height: auto; margin-right: 10px;">
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <![endif]-->
+    <!--[if !mso]> -->
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 70%;">
+                <img src="https://across-mena.com/sea.jpg" alt="ITEAMS" style="width: 100%; height: auto; max-width: 700px; display: block; border: 0; margin: 0 auto;">
+            </td>  
+            <td style="width: 2%; vertical-align: top;">
+                <div>
+                    <a href="https://www.facebook.com/acrossmena?locale=ar_AR" style="text-decoration: none;">
+                        <img src="https://across-mena.com/facebook.png" alt="Facebook" style="width: 32px; height: auto; margin-right: 10px;">
+                    </a>
+                    <a href="https://wa.me/+963944506000" style="text-decoration: none;">
+                        <img src="https://across-mena.com/whatsapp.png" alt="WhatsApp" style="width: 32px; height: auto; margin-right: 10px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/across-mena/about/" style="text-decoration: none;">
+                        <img src="https://across-mena.com/linkedin.png" alt="LinkedIn" style="width: 32px; height: auto; margin-right: 10px;">
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+        <!-- <![endif]-->
+    </td>  
+</tr>
+
+              
+            </div><!--./container-->
+        
+           
+                      
+    
+       
+        </section><!--./section-table -->
+    
+        </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

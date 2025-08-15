@@ -1,0 +1,7 @@
+/* Adjust width of editable fields */
+/* input[name*="import_fee"],
+input[name*="export_fee"],
+input[name*="review"] {
+    width: 50px !important; /* Adjust width as needed */
+    /* font-size: 14px; Adjust font size */
+/* }  */

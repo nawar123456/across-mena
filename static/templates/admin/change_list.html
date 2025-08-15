@@ -1,0 +1,17 @@
+{% extends "admin/change_list.html" %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/custom_admin.css">
+    <script src="/static/admin/js/custom_admin.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll("tbody tr").forEach(function (row) {
+                let checkingCell = row.querySelector('td:has(input[name$="checking"])');
+                if (checkingCell && checkingCell.querySelector('input:checked')) {
+                    row.classList.add("row-red");
+                }
+            });
+        });
+    </script>
+{% endblock %}

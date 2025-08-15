@@ -1,0 +1,21 @@
+{% extends "admin/change_list.html" %}
+{% block result_list %}
+<style>
+    /* ✅ Custom row styling */
+    .row-red {
+        background-color: red !important;
+        color: white !important;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("tr").forEach(row => {
+            let checkingColumn = row.querySelector("td.field-checking");
+            if (checkingColumn && checkingColumn.innerText.trim() === "True") {
+                row.classList.add("row-red");
+            }
+        });
+    });
+</script>
+{{ block.super }}
+{% endblock %}

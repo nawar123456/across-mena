@@ -1,0 +1,112 @@
+th.column-import_fee, td.field-import_fee {
+    width: 70px !important;  /* Increase width */
+    white-space: nowrap !important;  /* Prevent text wrapping */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.model-hscode th.column-import_fee, .model-hscode td.field-import_fee {
+    width: 70px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+tr.row-red {
+    background-color: rgba(255, 0, 0, 0.2) !important;  /* Light red */
+}
+
+tr.row-red td {
+    color: black !important;  /* Keep text readable */
+}
+
+.row-checking-true {
+    background-color: red !important;
+    color: white !important; /* Optional: Make text white for contrast */
+}
+
+.model-hscode th.column-export_fee, .model-hscode td.field-export_fee {
+    width: 70px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.model-hscode th.column-unit, .model-hscode td.field-unit {
+    width: 80px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+td.field-import_fee input,
+td.field-export_fee input,
+td.field-unit input,
+td.field-ser_all input
+{
+    width: 60px !important;
+    -moz-appearance: textfield !important; /* Firefox */
+    appearance: textfield !important; /* Chrome, Edge, Safari */
+}
+
+td.field-import_fee input::-webkit-outer-spin-button,
+input[name="import_fee"]::-webkit-inner-spin-button,
+input[name="export_fee"]::-webkit-outer-spin-button,
+input[name="export_fee"]::-webkit-inner-spin-button,
+input[name="ser_all"]::-webkit-outer-spin-button,
+input[name="ser_all"]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important; 
+    margin: 0 !important; /* Remove extra space */
+}
+
+/* ✅ Remove number input arrows in Chrome, Safari, Edge */
+input[type=number] {
+    -moz-appearance: textfield !important; /* Firefox */
+    appearance: textfield !important; /* Chrome, Edge, Safari */
+}
+
+/* ✅ Remove number input arrows in Chrome, Safari, Edge */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none !important; 
+    margin: 0 !important;
+}
+
+
+th.field-ser_all {
+    color: red;
+}
+/* #work  */
+
+
+
+/* Style the pen icon */
+.edit-pen img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+.edit-pen img:hover {
+    opacity: 1;
+
+}
+
+/* ✅ Add borders between columns in the HsCodeAdmin list view */
+.model-hscode th, .model-hscode td {
+    border: 0.05px solid #658ea2 !important;  /* Dark gray border */
+    padding: 2.5px !important;
+    text-align: center !important;
+}
+.model-hscode th{
+font-weight: bold !important;}
+
+.model-hscode th.column-import_fee,
+.model-hscode th.column-export_fee,
+.model-hscode th.column-unit {
+    font-weight: bold !important;
+    text-transform: uppercase !important; /* Optional: Make text uppercase */
+}
+
+

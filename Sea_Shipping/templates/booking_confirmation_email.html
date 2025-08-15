@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #000000;
+            border-bottom: 2px solid #FCC400;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        td {
+            background-color: #fff;
+        }
+        th strong, td strong {
+            color: #000000;
+        }
+        .highlight {
+            color: #000000;
+            font-weight: bold;
+        }
+        .logo-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        /* Ensure the logo size is smaller */
+        /*.logo-container img {*/
+        /*    width: 25px;*/
+        /*    height: auto;*/
+        /*}*/
+        .footer-text {
+            font-size: 12px;
+            color: #888;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Booking Request | {{ book_code }}</h2>
+        <h1>Dear customer, this is not a Booking confirmation. Your request will be processed ASAP</h1>
+        <table>
+            <!--<tr>-->
+            <!--    <th>Direction</th>-->
+            <!--    <td>{{ direction }}</td>-->
+            <!--</tr>-->
+            <tr>
+                <th>Shipping Service</th>
+                <td>{{ shipping_service }}</td>
+            </tr>
+            <tr>
+                <th>Port Of Loading</th>
+                <td>{{ station_origin }}</td>
+            </tr>
+            <tr>
+                <th>Port Of Discharge</th>
+                <td>{{ station_delivery }}</td>
+            </tr>
+            <tr>
+                <th>Departure Date</th>
+                <td>{{ date }}</td>
+            </tr>
+            <tr>
+                <th>Arrival Date</th>
+                <td>{{ end_date }}</td>
+            </tr>
+            <tr>
+                <th>Transit Time</th>
+                <td>{{ number_of_day }} days</td>
+            </tr>
+            <tr>
+                <th>Commodity</th>
+                <td>{{commodity.id}} | {{ commodity.label_en }}</td>
+            </tr>
+            <tr>
+                <th>Commodity Description</th>
+                <td>{{ commodity_description }}</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>{{ weight }} KG</td>
+            </tr>
+            <tr>
+                <th>Containers Details</th>
+                <td>{{ containers_detail }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ total_price }}EUR</td>
+            </tr>
+            <tr>
+                <th>Haulage Reference</th>
+                <td>{{ reference_number }}</td>
+            </tr>
+            <tr>
+                <th>Full Name</th>
+                <td>{{ full_name }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ email }}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{ phone_number }}</td>
+            </tr>
+            <tr>
+                <th>Contact Method</th>
+                <td>{{ contact_method }}</td>
+            </tr>
+        </table>
+
+        <div class="logo-container">
+            <p>Thank you for choosing our services</p>
+            <img src="cid:logo" alt="Company Logo">
+            <p class="footer-text">&copy; 2025 Across MENA. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

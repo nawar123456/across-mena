@@ -1,0 +1,49 @@
+# Temporary files and directories
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+
+# Personal environment variables
+.env
+.env.*
+
+# Virtual environment
+env/
+.venv/
+
+# SQLite temporary files
+*.sqlite3-journal
+*.sqlite3-wal
+
+# Dynamic content
+/media/
+/static/
+
+# Temporary files and directories
+/tmp/
+*.tmp
+
+# Development files
+*.xlsx
+*.ps1
+
+# Build and distribution files
+/dist/
+/build/
+
+# Django-specific files
+db.sqlite3
+*.sqlite3
+
+# Django-specific temporary files
+*.py[cod]
+__pycache__/
+
+# Firebase/Google Cloud credentials
+*firebase-adminsdk*.json
+service-account*.json
+google-credentials*.json
+*.pem
+.env
+.env.local
